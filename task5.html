@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+	<meta charset="UTF-8">
+	<title>Table</title>
+</head>
+<body>
+	<table style="text-align:Left" border="2" cellspacing="0" cellpadding="10">
+		<th>
+			<p style="font-size:130%"><strong>Информация</strong></p><br>
+   			<p>Марка: Suzuki</p>
+   			<p>Модел: GSXP</p>
+   			<p>Обем: 750 куб.см.</p>
+   			<p>Мощност: 136 к.с.</p>
+   			<p>Цена: 5000 лв.</p>
+   		</th>
+    	<th>
+    		<img src="images/motor.jpg" alt="motorcycle" style="width:500px;height:350px;">
+    	</th> 
+    	<th>
+    		<p>Свържете се с продавача.</p>
+    		<form action="index.php" method="post">
+		<label for="name">Име</label><br>
+		<input type="text" name="name" placeholder="Вашето име"><br>
+		<label for="email">Email</label><br>
+		<input type="email" name="email" placeholder="Email"><br>
+		<label for="message">Съобщение</label><br>
+		<textarea name="message" rows="8" cols="25">Съобщение</textarea><br>
+		<input type="submit" value="Send">
+			</form>
+		</th>
+	</table>
+</body>
+</html>
