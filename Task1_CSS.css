@@ -1,0 +1,34 @@
+#table {
+	display: block;
+	margin: 20px;
+	border: 2px solid #767676;
+	border-bottom: ridge #c9c8ad;
+	color:#62636e;
+	border-collapse: collapse;
+}
+tr{
+	text-align: left;
+	height: 20%;
+}
+th{
+	color: whitesmoke;
+	width:1%;
+	padding: 5px 40px 5px 5px;
+	background-color: #52b405;
+	border: 1px ridge #c9c8ad;
+	height: 22px;
+}
+td{
+	padding: 5px 40px 5px 5px;
+	border-right: 1px ridge #c9c8ad;
+	height: 22px;
+}
+.odd{
+	background-color:white;
+}
+.even{
+	background-color:#edecd8;
+}
+img{
+	padding-right: 10px;
+}
