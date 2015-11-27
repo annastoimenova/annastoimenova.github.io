@@ -1,0 +1,31 @@
+h1,h2{
+	text-align: center;
+}
+h1{
+	color: cornflowerblue;
+	border: 3px solid cornflowerblue;
+	background-color: whitesmoke;
+}
+.paragraf{
+	width: 32.8%;
+	float: left;
+	height: 400px;
+	padding: 3px;
+}
+#container{
+	border: 2px solid blue;
+}
+.fixed{
+	width:100%;
+    margin:0 auto;
+	background-color: orange;
+}
+.bottom{
+	clear: both;
+	color: deepskyblue;
+	padding: 10px;
+	text-align: justify;
+}
+.clear_fixed{
+	clear: both;
+}

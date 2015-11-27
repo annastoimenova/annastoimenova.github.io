@@ -1,0 +1,80 @@
+.first{
+	background-color: yellow;
+	border: 1px solid black;
+	width: 250px;
+	height: 180px;
+	position: relative;
+	top: 200px;
+	left: 200px;
+	text-transform: 
+	padding: 50px;
+	font-size: 20px;
+	z-index: -7;
+}
+p{
+	text-align: center;
+	padding: 50px 30px;
+}
+.second{
+	background-color: red;
+	border: 1px solid black;
+	width: 180px;
+	position: relative;
+	top: 110px;
+	left: 0px;
+	padding: 30px;
+	font-size: 20px;
+	z-index: -1;
+}
+.tok{background-color: pink;
+	border: 1px solid black;
+	width: 220px;
+	position: absolute;
+	top: 60px;
+	left: 10px;
+	padding: 30px;
+	font-size: 20px;
+	z-index: -1;
+}
+.love{background-color: orange;
+	border: 1px solid black;
+	width: 220px;
+	position: relative;
+	top: -50px;
+	left: 210px;
+	padding: 30px;
+	font-size: 20px;
+	z-index: -2;
+}
+.dish{background-color: blue;
+	border: 1px solid black;
+	width: 120px;
+	position: relative;
+	top: -300px;
+	left: 510px;
+	padding: 20px;
+	font-size: 20px;
+	z-index: -3;
+}
+.wash{
+	background-color: green;
+	border: 1px solid black;
+	width: 320px;
+	position: absolute;
+	top: 60px;
+	left: 410px;
+	padding: 20px;
+	font-size: 20px;
+	z-index: -3;
+}
+.milk{
+	background-color: brown;
+	border: 1px solid black;
+	width: 320px;
+	position: relative;
+	top: -700px;
+	left: 410px;
+	padding: 20px;
+	font-size: 20px;
+	z-index: -4;
+}

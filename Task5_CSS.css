@@ -1,0 +1,30 @@
+
+button{
+	text-align: center;
+	background-image: url(images/pix.jpg);
+	border: 0px solid #ada4a4;
+	font-family: verdana;
+	padding: 7px 20px;
+	cursor: pointer;
+	width: 100%;
+}
+td{
+	border-radius: 3px;
+	border: 1px solid #ada4a4
+}
+
+table{
+	border-spacing: 7px;
+	background-color: #f7f4f4;
+	padding: 7px;
+	border: 2px solid #ccbfbf;
+}
+input{
+	text-align: right;
+	border:0px;
+	padding: 2px;
+
+}
+.invisible{
+	border: none;
+}

@@ -1,0 +1,35 @@
+.container{
+	border-radius: 25px;
+	border: 3px solid darkorange;
+	background-color: lightpink;
+	width: 700px;
+	height: 430px;
+	margin: 20px;
+}
+.video{
+	width: 600px;
+	position: relative;
+	left: 50px;
+	top: 30px;
+}
+button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 10px ;
+    cursor: pointer;
+    position: relative;
+    top: 30px;
+    left: 50px;
+   }
+.button2{
+	background-color: green;
+	margin-left: 225px;
+}
+.clear{
+	clear: both;
+}
