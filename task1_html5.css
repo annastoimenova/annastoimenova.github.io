@@ -1,0 +1,30 @@
+aside,footer,header,menu,nav{ 
+    display:block;
+}
+section{
+	width: 1000px;
+	text-align: justify;
+	float: left;
+}
+aside{
+	float: left;
+	width: 200px;
+	padding-top: 60px;
+	padding-left: 20px;
+	height: auto;
+	line-height: 40px;
+	font-size: 24px;
+
+}
+.clear{
+	clear: both;
+}
+ul{
+	list-style: none;
+	margin-top: 30px;
+	padding-left: 0px;
+	font-size: 20px;
+}
+footer{
+	padding-top: 30px;
+}
