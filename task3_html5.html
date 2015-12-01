@@ -5,7 +5,48 @@
 	<title>HTML5Canvas</title>
 </head>
 <body>
-	<canvas id="canvas1" width="200" height="200" style="background: green;"></canvas>
-	<canvas id="canvas" width="200" height="200" style="border:1px solid #000000; background: red;"></canvas>
+	<canvas id="line" width="200" height="200" style="border:1px solid">
+	</canvas>
+	<script>
+		var line=document.getElementById("line");
+		var ctx=line.getContext("2d");
+		ctx.moveTo(0,200);
+		ctx.lineTo(200,0);
+		ctx.lineWidth = "2";
+		ctx.lineStyle = "red";
+		ctx.stroke();
+	</script>
+	<!--Za6to ne stava chervena linia-->
+		
+	
+	<canvas id="rec" width="220" height="220" style="border:1px solid"></canvas>
+	<script>
+		var canvas=document.getElementById("rec");
+		var ctx2=rec.getContext("2d");
+		ctx2.fillStyle="#FF0000";
+		ctx2.fillRect(10,10,200,200);
+		ctx2.stroke();
+	</script>
+	
+	<canvas id="circle" width="200" height="200" style="border:1px solid"></canvas>
+	<script>
+		var circle = document.getElementById("circle");
+		var ctx = circle.getContext("2d");
+		ctx.strokeStyle = 'orange';
+		ctx.beginPath();
+		ctx.arc(100,100,50,0,2*Math.PI);
+		ctx.fillStyle="orange";
+		ctx.fill();
+		ctx.stroke();
+	</script>
+
+	<canvas id="text" width="200" height="200" style="border:1px solid"></canvas>
+	<script>
+		var text = document.getElementById("text");
+		var ctx = text.getContext("2d");
+		ctx.font = "20px Arial";
+		ctx.fillStyle="yellow";
+		ctx.fillText("My first canvas text", 10, 100);
+	</script>
 </body>
 </html>
