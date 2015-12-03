@@ -1,0 +1,19 @@
+.center{
+	width: 400px;
+	height: 400px;
+	border: 20px solid black;
+	margin: 100px auto;
+}
+.border{
+	border-image: url("Duck.jpg") 35% repeat;
+
+}
+.circle{
+	width: 500px;
+	height: 500px;
+	border-radius: 300px;
+	background: url("Duck.jpg");
+	}
+.container{
+	background:linear-gradient(yellow, red);
+}
