@@ -1,0 +1,26 @@
+div {
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
+    background-color: red;
+    position: relative;
+    -webkit-animation: myfirst 5s linear infinite; /* Chrome, Safari, Opera */
+    animation: myfirst 5s linear infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:200px;}
+    50%  {left:200px; top:0px;}
+    75%  {left:0px; top:0px;}
+    100% {left:0px; top:200px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {left:0px; top:200px;}
+    25%  {left:200px; top:200px;}
+    50%  {left:200px; top:0px;}
+    75%  {left:0px; top:0px;}
+    100% {left:0px; top:200px;}

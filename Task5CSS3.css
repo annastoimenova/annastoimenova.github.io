@@ -1,0 +1,11 @@
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: transform 2s;
+}
+
+div:hover {
+    transform: rotate(180deg);
+}
+/*mogat li da se napraviat edin sled drug dva razli4ni transforma*/

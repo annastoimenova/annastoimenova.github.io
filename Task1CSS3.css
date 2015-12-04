@@ -1,0 +1,17 @@
+div{
+	width: 350px;
+	border: 1px solid black;
+	padding: 20px;
+	background-color: #DDDDDD;
+}
+.subscribe{
+	cursor: pointer;
+	background-color: #999999;
+	width: 80px;
+	height: 40px;
+	border-radius: 20px;
+	border: none;
+}
+input{
+	padding: 5px;
+}

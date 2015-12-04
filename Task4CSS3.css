@@ -1,0 +1,19 @@
+div{
+width: 300px;
+height: 300px;
+font-size: 1.3em;
+color: white;
+margin: 30px;
+position: relative;
+left: 100px;
+}
+.black_box{
+background-color: black;
+	-webkit-transform: rotateZ(90deg); /* Safari */
+    transform: rotateZ(90deg);
+}
+.red_box{
+background-color: red;
+    -webkit-transform: skewX(20deg); /* Safari */
+    transform: skewX(20deg); /* Standard syntax */
+}

@@ -1,0 +1,9 @@
+p{
+-webkit-column-count:3;
+-webkit-column-rule:3px solid yellow;
+-webkit-column-gap:40px;
+text-align: justify;
+}
+h1{
+	text-shadow:2px 2px 4px #7F00D4;
+}
