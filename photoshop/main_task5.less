@@ -1,0 +1,84 @@
+@import "colors.less";
+
+
+
+*{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	width: 822px;
+	background-color: #222244;
+}
+.container{
+	width: 700px;
+	height: 600px;
+	margin: 20px 40px;
+}
+header{
+	height: 165px;
+	background-color: @blue;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	img{
+		float: left;
+		margin: 30px 0 0 30px;
+	}
+	h1{
+		position: relative;
+		text-align: center;
+		font-size: 4em;
+		font-family: Verdana;
+		font-weight: bold;
+		color: white;
+		font-style: italic;
+		padding-top: 30px;
+	}
+}
+nav{
+	background-color: white;
+	width: 162px;
+	float: left;
+	height: 390px;
+	a{
+		text-decoration: none;
+		color:@brown;
+		padding: 10px 20px;
+	}
+	hr{
+		margin: 2px;
+		border-style: dashed;
+	}
+	p{
+		font-size: 0.8em;
+		color: @grey;
+		padding: 10px 0 10px 20px;
+		text-align: justify;
+	}
+
+}
+section{
+	float: left;
+	width: 498px;
+	background-color: white;
+	padding: 30px 15px 15px 25px;
+	height: 345px;
+	font-size: 0.9em;
+	h2{
+		padding-bottom: 20px;
+	}
+}
+.clear{
+	clear: both;
+}
+footer{
+	height: 40px;
+	background-color: @brown;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	text-align: center;
+	color: white;
+	padding-top:10px;
+	font-size: 0.8em;
+}

@@ -1,0 +1,39 @@
+@import "reset";
+@import "colors";
+@import "fonts";
+
+#header{
+	background: data-uri('images/brickwall.png') repeat-x repeat-y;
+} 
+
+.center{
+	margin: 0 auto;
+	width: 896px;
+}
+
+.logo-container{
+	*{
+		float: left;
+		display: block;
+		margin: 30px;
+	}
+	.logo{
+		background: data-uri('images/logo.png') no-repeat;
+	}
+	.logo-main{
+		height: 40px;
+		width: 209px;
+	}
+	
+	}
+.clearfix{
+	display: block;
+	height: 0px;
+	clear: both;
+	float: none;
+}
+@media(min-width:640px) and (max-width:960px){
+	#header-nav{
+		display: none;
+	}
+}

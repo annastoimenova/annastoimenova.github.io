@@ -1,0 +1,67 @@
+@import "gradient";
+@button_border:#336699;
+@shadow:#073044;
+
+nav{
+	width: 90%;
+    height: 38px;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+ul{
+	display: block;
+	position: relative;
+}
+ul li{
+		display: block;
+		float: left;
+		position: relative;
+		padding: 12px 28px;
+		text-transform: uppercase;
+		font-size: 0.8em;
+		a{
+			color: white;
+			text-decoration: none;
+		}
+	}
+a:hover{
+	display: inline;
+	color:#915B4F;
+	padding: 12px 28px;
+}
+button{
+	width: 154px;
+	height: 30px;
+	border-radius: 22px;
+	color: white;
+	text-shadow:1px 1px 3px @shadow;
+	border: none;
+	box-shadow: 1px 1px 1px @shadow;
+	cursor: pointer;
+	border: 0.5px solid @button_border;
+	margin-left: 20px;
+		p{
+			position: relative;
+			top: 8px;
+		}
+		img{
+		position: relative;
+		left: 60px;
+		top: -12px;
+		}
+}
+.last {
+    	p{
+    	font-size: 10px;
+    	left: -12px;
+    	top: 10px;
+    	}
+    	img{
+    		top: -9px;
+    	}
+}
+
