@@ -50,11 +50,28 @@ footer {
     width: 50%; /* 6 columns */
   }
 }
-@media screen and (max-width: 320px) {
-  div.navbar{
+/*@media (max-width: 320px) {
+  nav,
+  .container,
+  footer{
     width: 100%;
+  /*
+
+  nav {
+    height: auto;
   }
-}
+
+  ul.nav li {
+    float: none;
+    text-align: center;
+  }
+  ul.nav {
+    float: none;
+  }
+  ul{
+    float: none;
+  }
+Не мога да разбера защо не се получава и менюто ми не става едно под друго на малък екран*/
  .navbar-inverse {
   border-radius: 0px;
   border: none;
