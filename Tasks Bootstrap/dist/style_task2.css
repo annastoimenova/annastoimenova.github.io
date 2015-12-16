@@ -1,0 +1,61 @@
+html{
+	width: 1800px;
+}
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+/* tell the browser to render HTML 5 elements as block */
+article, aside, figure, footer, header, hgroup, nav, div, section { 
+  display:block;
+}
+
+img.logo{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 30px;
+	bottom: 2px;
+}
+#main{
+	background: transparent;
+}
+.navbar{
+	margin: 0px;
+	border-radius: 0px;
+}
+.row{
+	width: 1800px;
+	margin-bottom: 20px;
+}
+img.heading1{
+	width: 800px;
+	height: 350;
+}
+.container{
+	margin: 0px;
+}
+footer{
+	color: white;
+	padding-top: 10px;
+	text-align: center;
+}
+
+@media (min-width: 550px) and (max-width: 750px) {
+ul.navbar-nav{
+ 	float: none;
+ }
+
+ul{
+ 	float: none;
+ }
+ .row{
+ 	width: 40%;
+ }
+ img.heading1{
+ 	width: 600px;
+ }
+ }
+
+  
