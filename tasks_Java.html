@@ -5,8 +5,10 @@
 </head>
 <body>
 	<p id="demo"></p>
+	<h1 id="zad6"></h1><br><br>
+	<button onclick="myFunction()">Try it</button>
 
-<script>
+<script> //зад1
     var text = "";
     var i;
     for (i = 1; i < 301; i++) {
@@ -15,7 +17,7 @@
     console.log (text);
 </script>
 
-<script>
+<script> //zad 2
 	var x = 12;
 	if (x %3 == 0) {
 	console.log ("true");
@@ -25,9 +27,14 @@
 	};
 </script>
 
+<script> //zad2
+	var x = 12;
+	console.log (x %3 == 0);
+</script>
+
 <script>
-	var x = 32;
-	if (x %3 == 0) {
+	var x = 32; //zad3
+	if (x %4 == 0) {
 		console.log ("true")}
 		else if (x %7 ==0) {
 	console.log ("true");
@@ -36,15 +43,19 @@
 	console.log ("false");
 	};
 </script>
+<script> //zad3 - Как да го направя за да ми върне true?
+	var x = 32;
+	console.log ((x %4 == 0) && (x %7 ==0));
+</script>
 
-<script>
+<script> //zad4
 	var a = 12;
 	var b = 10;
 	var S = a * b;
 	console.log (S);
 </script>
 
-<script>
+<script> //zad5
 	var a = 5;
 	var b = 10;
 	var h = 6;
@@ -53,20 +64,68 @@
 </script>
 
 <script>
-        var x = 1;
-        var y = x += 1;
-		console.log(y);
+    var x = 1;
+    var y = x += 1;
+	console.log(y);
 </script>
 
-<script>
-	<script>
-var maxNum = "";
-var i, maxNum;
-for (i = 7, i>50, i<101; len = cars.length, text = ""; i < len; i++) {
-    text += cars[i] + "<br>";
+<script> // зад6  
+function myFunction() {
+document.getElementById("demo").innerHTML =
+Math.max(0, 150, 30, 20, -8, -200);
+}
+</script>
+
+
+//  <script> // зад6  Къде ми е грешката и как да ми се покаже без бутон?
+// function myFunction(a, b) {
+//     Math.max(0, 150, 30, 20, -8, -200);
+// }
+// document.getElementById("demo").innerHTML = myFunction();
+// </script>
+
+<script> //зад6
+	console.log (Math.max(5, 10,20));
+</script>
+
+<script> //zad 11  
+	var now = new Date();
+	var date = now.getDate();
+	var day = now.getDay();
+	var day = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+	var month = now.getMonth();
+	var year = now.getFullYear();
+	var hour = now.getHours();
+	var min = now.getMinutes();
+	console.log (now + " " + date + " " + day[now.getDay()] + " "+ month + " " + year + " "+ hour + " "+ min);
+</script>
+
+<script> //Зад 12-13
+var student = {
+    name:"Ivan Petrov",
+    age:20,
+    experience:"none",
+    rating: "exelent",
+    learning: function () {return "learning"},
+    fun: function () {return "have a fun"}
 }
 
+console.log (student)
 </script>
+
+// <script>
+// var points = [40, 100, 1, 5, 25, 10];
+// document.getElementById("demo").innerHTML = points[3];    
+// </script>
+
+// <script>
+// i=50;i++;i<=100;
+
+// if (i %7 ==0) {
+	
+// }
+// console.log (i);
+// </script>
 
 </body>
 </html>
