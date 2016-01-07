@@ -1,0 +1,219 @@
+body {
+	margin:0;
+	font-family:Verdana;
+	margin-bottom:50px;
+}
+
+#bricks {
+	margin:0;
+	height:440px;
+	width:100%;
+	background: url('../img/brickwall.png');
+	padding-top:46px;
+}
+
+#content {
+	width:896px;
+	margin:auto;
+}
+
+#header {
+	width:100%;
+	height:45px;
+	overflow:hidden;
+}
+
+#logo {
+	width:209px;
+	height:36px;
+	float:left;
+}
+
+#title {
+	margin-top:17px;
+	width:467;
+	height:19px;
+	margin-left:20px;
+	float:left;
+}
+
+#phone {
+	width:180px;
+	height:36px;
+	float:right;
+}
+
+#menu {
+	margin-top:11px;
+	background:#969696;
+	width:896px;
+	height:27px;
+	overflow:hidden;
+	color:white;
+
+}
+
+.currmenu {
+	padding-top:5px;
+	float:left;
+	text-align:center;
+	height:22px;
+	background:#e9490a;
+	cursor:default;
+}
+
+.menuitem {
+	/*border:1px solid blue;*/
+	padding-top:5px;
+	float:left;
+	text-align:center;
+	height:22px;
+}
+
+.menuitem:hover {
+	background:#e9490a;
+	cursor:pointer;
+}
+
+#presenter {
+	margin-top:5px;
+	width:896px;
+	height:300px;
+	overflow:hidden;
+	position:relative;
+}
+
+#pres1 {
+	width:740px;
+	height:300px;
+	float:left;
+}
+
+#pres1 img {
+	/*float:left;*/
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:0;
+	/*visibility:hidden;*/
+}
+
+#pres2 {
+	margin-left:10px;
+	width:146px;
+	background:aqua;
+	float:left;
+	height:300px;
+}
+
+#subt {
+	color:#969696;
+	font-size:16px;
+	padding-left:20px;
+}
+
+#footer {
+	/*position:fixed;*/
+    /*bottom:0px;
+    margin-bottom:0px;*/
+    height:50px;
+    background-color:#e9490a;
+    /*left:-20px;*/
+    width:896px;
+    overflow:hidden;
+}
+
+#f_logo { float:left; margin-left:30px; margin-top:10px; }
+#f_facebook { float:left; margin-left:560px; margin-top:6px; }
+#f_facebook img { width:30px; height:30px; border:0; }
+#f_phone { float:left; margin-left:10px; margin-top:5px; }
+
+#main {
+	overflow:hidden;
+	font-size:14px;
+	margin-top:30px;
+	margin-bottom:60px;
+}
+
+#mleft {
+	float:left;
+	width:430px;
+}
+
+#mright {
+	margin-left:35px;
+	float:left;
+	width:430px;
+}
+
+.c1 {
+	overflow:hidden;
+	margin-top:12px;
+}
+
+.c2 {
+	float:left;
+	width:150px;
+	padding-top:5px;
+	padding-right:5px;
+	text-align:right;
+}
+
+.c3 {
+	float:left;
+
+}
+
+.c3 input[type="text"] {
+	background:#c0c0c0;
+	border:1px solid black;
+	font-size:16px;
+	width:220px;
+	height:20px;
+}
+
+.c3 textarea {
+	background:#c0c0c0;
+	border:1px solid black;
+	font-size:14px;
+	width:216px;
+	height:100px;
+}
+
+.c3 input[type="submit"] {
+	background:#e9490a;
+	border:0;
+	font-size:16px;
+	width:80px;
+	height:30px;
+	color:white;
+	cursor:pointer;
+	padding-bottom:2px;
+}
+
+.c3 input[type="submit"]:hover {
+	background:#f9692a;
+}
+
+.c4 {
+	float:left;
+	background:#e9490a;
+	border:0;
+	width:210px;
+	height:22px;
+	color:white;
+	cursor:pointer;
+	padding-left:10px;
+	padding-top:2px;
+}
+
+.succ {
+	color:#e9490a;
+	margin-top:40px;
+}
+
+.imghld {
+	float:left;
+	margin-right:20px;
+	margin-bottom:20px;
+}
