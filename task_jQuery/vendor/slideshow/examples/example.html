@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<style type="text/css" media="screen">
+		@import url(css/master.css);
+		@import url(css/slideshow.css);
+	</style>
+	
+	<script src="js/prototype.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/slideshow.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	
+	<h1>slideshow.js Examples for version 0.3</h1>
+	
+	<h2>Basic slideshow</h2>
+	<div id="basic" class="slideshow">
+		<ul id="basic-ul">
+			<li>
+				<img src="images/horse.jpg" width="400" height="300" alt="Rocking horse">
+			</li>
+			<li>
+				<img src="images/metro.jpg" width="400" height="300" alt="WMATA Metro Interior">
+			</li>
+			<li>
+				<img src="images/panda.jpg" width="400" height="300" alt="Panda (Taken at the Washington DC National Zoo)">
+			</li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript" charset="utf-8">
+		new Slideshow('basic').create();
+	</script>
+	
+<pre><code>
+new Slideshow('basic').create();
+</code></pre>
+
+	
+	<h2>Basic slideshow (without javascript enabled)</h2>
+	<div class="slideshow">
+		<ul>
+			<li>
+				<img src="images/horse.jpg" width="400" height="300" alt="Rocking horse">
+			</li>
+			<li>
+				<img src="images/metro.jpg" width="400" height="300" alt="WMATA Metro Interior">
+			</li>
+			<li>
+				<img src="images/panda.jpg" width="400" height="300" alt="Panda (Taken at the Washington DC National Zoo)">
+			</li>
+		</ul>
+	</div>
+	
+	<h2>More advanced settings</h2>
+	<div id="advanced" class="slideshow">
+		<ul id="advanced-ul">
+			<li>
+				<img src="images/horse.jpg" width="400" height="300" alt="Rocking horse">
+			</li>
+			<li>
+				<img src="images/metro.jpg" width="400" height="300" alt="WMATA Metro Interior">
+			</li>
+			<li>
+				<img src="images/panda.jpg" width="400" height="300" alt="Panda (Taken at the Washington DC National Zoo)">
+			</li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript" charset="utf-8">
+		var advanced = new Slideshow('advanced');
+		advanced.description_template = "Image #{number} of #{total} - #{description} - #{width}x#{height} - <span style=\"color:#999;\">#{filename}</span>";
+		advanced.duration = 1.5;
+		advanced.create();
+	</script>
+	
+<pre><code>
+var advanced = new Slideshow('advanced');
+advanced.description_template = "Image #{number} of #{total} - #{description} - 
+     #{width}x#{height} - &lt;span style=\"color:#999;\"&gt;#{filename}&lt;/span&gt;";
+advanced.duration = 1.5;
+advanced.create();
+</code></pre>
+
+	
+	<h2>Slideshow with automatic timer</h2>
+	<div id="timer" class="slideshow">
+		<ul id="timer-ul">
+			<li>
+				<img src="images/horse.jpg" width="400" height="300" alt="Rocking horse">
+			</li>
+			<li>
+				<img src="images/metro.jpg" width="400" height="300" alt="WMATA Metro Interior">
+			</li>
+			<li>
+				<img src="images/panda.jpg" width="400" height="300" alt="Panda (Taken at the Washington DC National Zoo)">
+			</li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript" charset="utf-8">
+		var auto = new Slideshow('timer');
+		auto.description_template = "Image #{number} of #{total} - #{description}<br><small>(The slideshow will advance automatically)</small>";
+		auto.auto_play = true;
+		auto.create();
+	</script>
+	
+<pre><code>
+var auto = new Slideshow('timer');
+auto.description_template = "Image #{number} of #{total} - #{description}&lt;br&gt;
+     &lt;small&gt;(The slideshow will advance automatically)&lt;/small&gt;";
+auto.auto_play = true;
+auto.create();
+</code></pre>
+
+	
+	<h2>Slideshow without descriptions</h2>
+	<div id="no-desc" class="slideshow">
+		<ul id="no-desc-ul">
+			<li>
+				<img src="images/horse.jpg" width="400" height="300" alt="Rocking horse">
+			</li>
+			<li>
+				<img src="images/metro.jpg" width="400" height="300" alt="WMATA Metro Interior">
+			</li>
+			<li>
+				<img src="images/panda.jpg" width="400" height="300" alt="Panda (Taken at the Washington DC National Zoo)">
+			</li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript" charset="utf-8">
+		var no_desc = new Slideshow('no-desc');
+		no_desc.show_descriptions = false;
+		no_desc.create();
+	</script>
+	
+<pre><code>
+var no_desc = new Slideshow('no-desc');
+no_desc.show_descriptions = false;
+no_desc.create();
+</code></pre>
+
+	
+	<h2>Slideshow without navigation buttons</h2>
+	<div id="no-nav" class="slideshow">
+		<ul id="no-nav-ul">
+			<li>
+				<img src="images/horse.jpg" width="400" height="300" alt="Rocking horse">
+			</li>
+			<li>
+				<img src="images/metro.jpg" width="400" height="300" alt="WMATA Metro Interior">
+			</li>
+			<li>
+				<img src="images/panda.jpg" width="400" height="300" alt="Panda (Taken at the Washington DC National Zoo)">
+			</li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript" charset="utf-8">
+		var no_nav = new Slideshow('no-nav');
+		no_nav.show_nav = false;
+		no_nav.auto_play = true;
+		no_nav.create();
+	</script>
+	
+<pre><code>
+var no_nav = new Slideshow('no-nav');
+no_nav.show_nav = false;
+no_nav.auto_play = true;
+no_nav.create();
+</code></pre>
+
+
+
+	<h2>Slideshow with custom viewer size</h2>
+	<div id="size" class="slideshow">
+		<ul id="size-ul">
+			<li>
+				<img src="images/horse.jpg" width="400" height="300" alt="Rocking horse">
+			</li>
+			<li>
+				<img src="images/metro.jpg" width="400" height="300" alt="WMATA Metro Interior">
+			</li>
+			<li>
+				<img src="images/panda.jpg" width="400" height="300" alt="Panda (Taken at the Washington DC National Zoo)">
+			</li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript" charset="utf-8">
+		var size = new Slideshow('size');
+		size.slideshow_size.height = '245px';
+		size.slideshow_size.width = '178px';
+		// could also be size.slideshow_size = { width:'245px', height:'178px' }
+		size.create();
+	</script>
+	
+<pre><code>
+var size = new Slideshow('size');
+size.slideshow_size.height = '245px';
+size.slideshow_size.width = '178px';
+// could also be size.slideshow_size = { width:'245px', height:'178px' }
+size.create();
+</code></pre>
+
+
+	<h2>Slideshow with auto_size and auto_center</h2>
+	<div id="auto-size" class="slideshow">
+		<ul id="auto-size-ul">
+			<li>
+				<img src="images/horse.jpg" width="400" height="300" alt="Rocking horse">
+			</li>
+			<li>
+				<img src="images/metro.jpg" width="400" height="300" alt="WMATA Metro Interior">
+			</li>
+			<li>
+				<img src="images/building.jpg" width="500" height="375" alt="Building with Chinese Writing (Taken in China Town in Washington DC)">
+			</li>
+			<li>
+				<img src="images/panda.jpg" width="400" height="300" alt="Panda (Taken at the Washington DC National Zoo)">
+			</li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript" charset="utf-8">
+		var auto_size = new Slideshow('auto-size');
+		auto_size.auto_size = true;
+		auto_size.auto_center = true;
+		auto_size.slideshow_background = "#000";
+		auto_size.create();
+	</script>
+	
+<pre><code>
+var auto_size = new Slideshow('auto-size');
+auto_size.auto_size = true;
+auto_size.auto_center = true;
+auto_size.slideshow_background = "#000";
+auto_size.create();
+</code></pre>
+
+
+	<style type="text/css" media="screen">
+		#auto-size2 img {
+			border: 6px solid #fff;
+			border-bottom: 6px solid #ccc;
+			border-right: 6px solid #ccc;
+		}
+	</style>
+	<h2>Slideshow with auto_size and auto_center and a pretty border</h2>
+	<div id="auto-size2" class="slideshow">
+		<ul id="auto-size2-ul">
+			<li>
+				<img src="images/horse.jpg" width="400" height="300" alt="Rocking horse">
+			</li>
+			<li>
+				<img src="images/metro.jpg" width="400" height="300" alt="WMATA Metro Interior">
+			</li>
+			<li>
+				<img src="images/building.jpg" width="500" height="375" alt="Building with Chinese Writing (Taken in China Town in Washington DC)">
+			</li>
+			<li>
+				<img src="images/panda.jpg" width="400" height="300" alt="Panda (Taken at the Washington DC National Zoo)">
+			</li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript" charset="utf-8">
+		var auto_size_two = new Slideshow('auto-size2');
+		auto_size_two.auto_size = true;
+		auto_size_two.auto_center = true;
+		auto_size_two.slideshow_background = "#000";
+		auto_size_two.create();
+	</script>
+	
+<pre><code>
+var auto_size_two = new Slideshow('auto-size2');
+auto_size_two.auto_size = true;
+auto_size_two.auto_center = true;
+auto_size_two.slideshow_background = "#000";
+auto_size_two.create();
+
+ &amp;
+
+#auto-size2 img {
+	border: 6px solid #fff;
+	border-bottom: 6px solid #ccc;
+	border-right: 6px solid #ccc;
+}
+</code></pre>
+
+
+
+	
+</body>
+</html>
