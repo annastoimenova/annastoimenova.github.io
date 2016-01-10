@@ -25,7 +25,7 @@
 	}
 	.task2{
 		width: 200px;
-		height: 120px;
+		height: 100px;
 		background-color: green;
 		font-size: 20px;
 		text-align: center;
@@ -49,28 +49,33 @@
 	</script>
 	<br><br>
 
-	<script>
-		$(".task2").click(function(){
-		$(".task2").animate({"width": '400px', "height": '240px', "font-size": '40px', "bottom":'0px'})
-		});
-
-	</script>
 	<div class="task2">Задача 2</div> <!-- zad2 --><br><br>
-	<button>fadeIn</button><br><br> <!-- zad3,4 -->
+	<script>
+		$(document).ready(function () {
+		$(".task2").animate({
+			width: '400px',
+			height: '200px',
+			top:'1300px'}); // font-size:'40px', bottom: '0px' не са ми активни ЗАЩО?
+	});
+	</script>
+
+
+	<button>fadeIn/fadeOut</button><br><br> <!-- zad3,4 -->
 	<div class="red" style="width:80px;height:80px;background-color:red;"></div>
 	<div class="blue" style="width:80px;height:80px;background-color:blue;display:none;"></div><br>
 
 	<script>
 		$("button").click(function(){
 		$(".red").fadeOut(1000);
-		$(".blue").fadeIn(2000);
+		$(".blue").fadeIn(1000);
 	});
 	</script>
 	<br>
-	<p>Това е задача 5</p><br> <!-- zad5 нещо не ми се получи-->
+	<p class="first">Това е задача 5</p><br> 
+	<p class="second" style="display:none">Това е задача 5</p><!-- zad5-->
 	<script>
-		$("p").click(function () {
-			$("p").css({"background-color":"yellow", "font-size":"200%","color":"red", "text-align":"center","text-decoration":"underline"});
+		$(".first").click(function () {
+			$(".second").css({"background-color":"yellow", "font-size":"200%","color":"red", "text-align":"center","text-decoration":"underline","display":"initial"});
 		});
 	</script>
 	

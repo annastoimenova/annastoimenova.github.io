@@ -1,0 +1,53 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+	<title>jQuery</title>
+	<script type="text/javascript" src="vendor/jquery/jquery-2.1.4.min.js"></script>
+	<style>
+	.task7, .task77, .task6, .task66{
+		padding: 5px;
+		background-color: #d3c2c2;
+		width: 400px;
+		height: auto;
+		text-align: center;
+		border: 1px solid red;
+	}
+	.task77{
+		padding-bottom: 50px;
+		display: none;
+	}
+	.task66{
+		padding-top: 50px;
+	}
+	.picture2{
+		width: 600px;
+		display: none;
+	}
+	.task2{
+		width: 200px;
+		height: 100px;
+		background-color: green;
+		font-size: 20px;
+		text-align: center;
+		color:white;
+		padding-top: 80px;
+		position:relative;
+	}
+	body{
+		height: 800px;
+	}
+	</style>
+</head>
+<body>
+
+	<div class="task2">Задача 2</div> <!-- zad2 --><br><br>
+	<script>
+		$(document).ready(function () {
+		$(".task2").animate({
+			width: '400px',
+			height: '200px',
+			top:'520px'});
+	});
+	</script>
+</body>
+</html>
