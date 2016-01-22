@@ -1,0 +1,52 @@
+.awesome_land{
+	background-image: url("../assets/cricket_ball.jpg");
+	height: 400px;
+	text-align: center;
+	margin: 0px;
+	width: 100%;
+	padding-top: 40px;
+}
+.top{
+	margin-bottom: 0px;
+}
+.inside{
+	width: 600px;
+	position: absolute;
+	left: 300px;
+}
+.content p{
+	font-size: 14px;
+}
+.input-group{
+	width: 500px;
+	margin: 0 250px 30px 250px;
+
+}
+.content h1{
+	padding-top: 20px;
+	font-size: 3em;
+	font-weight: bold;
+}
+.content{
+	width: 100%;
+	padding: 0px;
+}
+.summery{
+	text-align: center;
+	padding-bottom: 40px;
+}
+.bottom{
+	background-color: #85b8ea;
+	height: 500px;
+	padding-top: 50px;
+	margin-top: 70px;
+	width: 100%;
+}
+.center {
+ 	text-align:center;
+ }
+.appstoreImage{
+	width: 250px;
+	padding-top: 20px;
+	cursor: pointer;
+}

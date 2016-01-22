@@ -1,0 +1,52 @@
+.container{
+	width: auto;
+}
+
+.header{
+	height: 50px;
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+.logo{
+	width: 60px;
+	height: 60px;
+	margin-left: -10px;
+	position: relative;
+	bottom: 20px;
+}
+ul{
+	padding: 0px;
+}
+li{
+	padding-right: 30px;
+}
+.fixed{
+	position: relative;
+	top:-10px;
+}
+.heading1{
+	width: 550px;
+}
+.menubar{
+	padding-left: 0px;
+	position: relative;
+	left: -16px;
+}
+.footer{
+	color: white;
+	margin-top: 10px;
+	text-align: center;
+	border-radius: 0px;
+	padding-top: 10px;
+}
+@media (max-width: 766px) {
+  h1{
+    padding-top: 100px;
+  }
+  nav{
+  	display: none;
+  }
+  .container-fluid>.navbar-collapse{
+  	margin-left: 0px; 
+  }
+}

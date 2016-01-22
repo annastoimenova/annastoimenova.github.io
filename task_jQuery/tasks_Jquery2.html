@@ -43,10 +43,11 @@
 	<div class="task2">Задача 2</div> <!-- zad2 --><br><br>
 	<script>
 		$(document).ready(function () {
-		$(".task2").animate({
-			width: '400px',
-			height: '200px',
-			top:'520px'});
+			var div = $("div.task2");
+        div.animate({height: '300px', opacity: '0.4'}, "slow");
+        div.animate({width: '300px', opacity: '0.8'}, "slow");
+        div.animate({height: '100px', opacity: '0.4'}, "slow");
+        div.animate({width: '100px', opacity: '0.8'}, "slow");
 	});
 	</script>
 </body>

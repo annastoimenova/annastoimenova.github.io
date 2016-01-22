@@ -42,19 +42,26 @@ footer{
 	text-align: center;
 }
 
-@media (min-width: 550px) and (max-width: 750px) {
-ul.navbar-nav{
+@media (min-width: 550px) and (max-width: 767px) {
+.collapse{
  	float: none;
+ 	display: block;
+ }
+ header{
+ 	width: 40%;
  }
 
-ul{
- 	float: none;
- }
  .row{
  	width: 40%;
  }
  img.heading1{
- 	width: 600px;
+ 	width: 650px;
+ }
+ .navbar-default{
+ 	display: none;
+ }
+ footer{
+ 	width: 40%;
  }
  }
 
