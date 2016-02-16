@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="bower_components/jquery/dist/jquery.js" ></script>
+	<script src="bower_components/masonry/dist/masonry.pkgd.js" ></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js" ></script>
+	<script src="bower_components/mustache.js/mustache.js" ></script>
+	<link href="lightbox/dist/css/lightbox.css" rel="stylesheet">
+	<script src="lightbox/dist/js/lightbox.js"></script>
+
+	<style>
+		body {
+			font-family: "Verdana"
+		}
+
+		h1 {
+			text-transform: uppercase;
+		}
+
+		.image-grid-item {
+			cursor: pointer;
+			width: 200px;
+			margin-bottom: 10px;
+			border: 1px solid #999;
+			border-radius: 4px;
+			height: 100px;
+		}
+		.image-grid-item > img{
+			width: 100%;
+		}
+		.image-grid-item > header{
+			display: none;
+			background-color: rgba(0,0,0, 0.3);
+			position: absolute;
+			padding: 10px;
+			width: 100%;
+			height: 100%;
+			color: #FFF;
+		}
+		.image-grid-item:hover > header{
+			display: block;
+		}
+
+		.image-grid-item-width2 {width: 400px;}
+		.image-grid-item-width2 > img{width: 398px;}
+		.example-image{
+			width: 200px;
+		}
+	</style>
+</head>
+
+<body>
+	<button id="catsbutton">Cutest cats!</button>
+	<div id="image-grid"><br><br>
+	</div>
+	<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$.get('cat.mst', function (template) {
+				Mustache.parse(template);
+
+				$.ajax({
+					url: 'cats.json',
+					dataType: 'json',
+					complete: function (data) {
+						
+						data.responseJSON.forEach(function(item){
+							var rendered = Mustache.render(template, item);
+							$(rendered)
+								.data(item)
+								.appendTo($("#image-grid")).click(function(){
+									var name = $(this).data('name') || "Puppy";
+									var bark = $(this).data('bark') || "Baw Baw";
+									
+								});
+							//if(Math.random() >= 0.5)
+							//	item.addClass('image-grid-item-width2')
+						});
+						$("#image-grid").masonry({
+							itemSelector: '.image-grid-item',
+							gutter: 10,//margin between images
+							columnWidth: 200
+						});
+					},
+					failure: function (error) {
+						notie.error('no puppies');
+					}
+				});
+			});
+		});
+	});
+	</script>
+</body>
+
+</html>

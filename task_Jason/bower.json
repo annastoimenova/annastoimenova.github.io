@@ -1,0 +1,26 @@
+{
+  "name": "jQ-UI-AJAX-tutorial",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Velin Branimirov Vangelov <velin.br.vangelov@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "bootstrap": "~3.3.6",
+    "notie": "*",
+    "sweetalert": "~1.1.3",
+    "list": "*",
+    "mustache.js": "mustache#~2.2.1"
+  }
+}

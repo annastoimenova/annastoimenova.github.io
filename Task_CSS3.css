@@ -12,7 +12,7 @@ body{
 }
 .flex_container{
 	border: 3px solid cornflowerblue;
-	display: flex;
+	display:flex;
 	background-color: orange;
 }
 .paragraf{

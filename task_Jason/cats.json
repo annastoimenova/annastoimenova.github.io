@@ -1,0 +1,36 @@
+[{
+	"image": "images/cat0.jpg",
+	"name" : "Fluffy",
+	"content": "extra content here",
+	"mew": "baw baw"
+},{
+	"image": "images/cat1.jpg",
+	"name" : "Ears",
+	"content": "Those ears!",
+	"mew": "meo meo"
+},{
+	"image": "images/cat2.jpg",
+	"name" : "Puppy Eyes",
+	"content": "Irresistable",
+	"mew": "woff woff"
+},{
+	"image": "images/cat3.jpg",
+	"name" : "Boo Boo",
+	"content": "Adorable",
+	"mew": "grrr"
+},{
+	"image": "images/cat4.jpg",
+	"name" : "Puffy",
+	"content": "extra content here",
+	"mew": "puff puff"
+},{
+	"image": "images/cat5.jpg",
+	"name" : "Sir FartsAlot",
+	"content": "Farts alot 0.o",
+	"mew": "*pryc*"
+},{
+	"image": "images/cat6.jpg",
+	"name" : "Hi",
+	"content": "Cuteness overwhelming",
+	"mew": "Stop poking me dude!"
+}]

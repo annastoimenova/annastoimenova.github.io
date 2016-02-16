@@ -31,6 +31,7 @@ li{
 	padding-left: 0px;
 	position: relative;
 	left: -16px;
+	width: 699px;
 }
 .footer{
 	color: white;
@@ -39,9 +40,12 @@ li{
 	border-radius: 0px;
 	padding-top: 10px;
 }
+.menu{
+	border-radius: 0px;
+}
 @media (max-width: 766px) {
   h1{
-    padding-top: 100px;
+    /*padding-top: 100px;*/
   }
   nav{
   	display: none;

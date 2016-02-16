@@ -1,0 +1,7 @@
+<div class="image-grid-item">
+	<header>
+		<h3 class="puppy-name">{{ name }}</h3>
+		<p class="puppy-content">{{ content }}</p>
+	</header>
+	<img src="{{ image }}" />
+</div>
